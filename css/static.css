@@ -165,12 +165,16 @@ a:hover {
 .italic {
   font-style: italic;
 }
+.no-hover:hover {
+  text-decoration: none;
+}
 
 .underline {
   text-decoration: underline;
   position: relative;
 }
 
+footer a,
 .animated-underline {
   color: inherit !important;
   text-decoration: none !important;
@@ -184,6 +188,7 @@ a:hover {
   transition: background-size 0.5s;
 }
 
+footer a:hover,
 .animated-underline:hover {
   animation: underlined 1s both;
 }
@@ -213,7 +218,16 @@ a:hover {
 .nav-link {
   color: inherit !important;
 }
-
+.btn-outline-danger {
+  color: #f56c6c;
+  background: #fef0f0;
+  border-color: #fbc4c4;
+}
+.btn-outline-secondary {
+  color: #909399;
+    background: #f4f4f5;
+    border-color: #d3d4d6;
+}
 .navbar {
   padding-left: 20px;
   padding-right: 20px;

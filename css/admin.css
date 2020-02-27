@@ -1,0 +1,60 @@
+.admin {
+    background-color: #F7F9FA;
+    min-height: 100vh;
+}
+.dashboard {
+    padding-top: 60px;
+}
+.navbar {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+}
+.login {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home {
+    height: calc(100vh - 70px);
+}
+.home-left {
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    background-color: white;
+    color: #222222;
+}
+.home-right {
+    margin-left: 240px;
+}
+.list-menu li {
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+    font-weight: 600;
+}
+.list-menu li.active,
+.list-menu li:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+.list-menu li.active:before,
+.list-menu li:hover:before {
+    position: absolute;
+    content: "";
+    left: -12px;
+    background-color: var(--secondary-color);
+    width: 4px;
+    height: 100%;
+}
+.my-avatar {
+    height: 200px;
+  background-color: #bdc3c7;
+}
+.my-avatar img {
+    height: 100%;
+    object-fit: contain;
+}
+.btn-action {
+    height: 40px!important;
+}

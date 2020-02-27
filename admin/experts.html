@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrilex Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="js/flexibility.js"></script>
+</head>
+
+<body class="admin dashboard">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand bold" href="#">Afrilex Admin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="32"
+                            fill="white">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                    }
+                                </style>
+                            </defs>
+                            <title>user--avatar</title>
+                            <path
+                                d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2ZM10,26.38v-2A3.22,3.22,0,0,1,13,21h6a3.22,3.22,0,0,1,3,3.39v2a11.92,11.92,0,0,1-12,0Zm14-1.46v-.61A5.21,5.21,0,0,0,19,19H13a5.2,5.2,0,0,0-5,5.31s0,0,0,0v.59a12,12,0,1,1,16,0Z" />
+                            <path d="M16,7a5,5,0,1,0,5,5A5,5,0,0,0,16,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,16,15Z" />
+                            <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1"
+                                width="32" height="32" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
+                            viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"
+                            fill="white">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: none;
+                                }
+                            </style>
+                            <rect class="st0" width="32" height="32" />
+                            <rect x="14" y="5" width="4" height="4" />
+                            <rect x="5" y="5" width="4" height="4" />
+                            <rect x="23" y="5" width="4" height="4" />
+                            <rect x="14" y="14" width="4" height="4" />
+                            <rect x="5" y="14" width="4" height="4" />
+                            <rect x="23" y="14" width="4" height="4" />
+                            <rect x="14" y="23" width="4" height="4" />
+                            <rect x="5" y="23" width="4" height="4" />
+                            <rect x="23" y="23" width="4" height="4" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--  -->
+    <div class="home">
+        <!-- Sidebar -->
+        <div class="home-left p-3">
+            <ul class="list-unstyled list-menu">
+                <li>
+                    <a href="#" class="no-hover">
+                        <div class="_flex">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
+                                viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"
+                                fill="currentColor">
+                                <path d="M8,4v4H4V4H8z M10,2H2v8h8V2z M18,4v4h-4V4H18z M20,2h-8v8h8V2z M28,4v4h-4V4H28z M30,2h-8v8h8V2z M8,14v4H4v-4H8z M10,12H2
+                        	v8h8V12z M18,14v4h-4v-4H18z M20,12h-8v8h8V12z M28,14v4h-4v-4H28z M30,12h-8v8h8V12z M8,24v4H4v-4H8z M10,22H2v8h8V22z M18,24v4h-4
+                        	v-4H18z M20,22h-8v8h8V22z M28,24v4h-4v-4H28z M30,22h-8v8h8V22z" />
+                            </svg>
+
+                            <span class="ml-3">Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="_flex _between no-hover">
+                        <div class="_flex">
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32"
+                                aria-hidden="true" style="will-change: transform;" fill="currentColor">
+                                <path
+                                    d="M16.61,2.21a1,1,0,0,0-1.24,0L1,13.42,2.24,15,4,13.62V26a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V13.63L29.76,15,31,13.43ZM18,26H14V18h4Zm2,0h0V18a2,2,0,0,0-2-2H14a2,2,0,0,0-2,2v8H6V12.06L16,4.27l10,7.8V26Z">
+                                </path>
+                                <title>Home</title>
+                            </svg>
+                            <span class="ml-3">Cabinets</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#" class="_flex _between no-hover">
+                        <div class="_flex">
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32"
+                                aria-hidden="true" style="will-change: transform;" fill="currentColor">
+                                <path
+                                    d="M26 30H24V27a5.0059 5.0059 0 0 0-5-5H13a5.0059 5.0059 0 0 0-5 5v3H6V27a7.0082 7.0082 0 0 1 7-7h6a7.0082 7.0082 0 0 1 7 7zM5 6A1 1 0 0 0 4 7v9H6V7A1 1 0 0 0 5 6z">
+                                </path>
+                                <path
+                                    d="M4,2V4H9v7a7,7,0,0,0,14,0V4h5V2Zm7,2H21V7H11Zm5,12a5,5,0,0,1-5-5V9H21v2A5,5,0,0,1,16,16Z">
+                                </path>
+                                <title>Education</title>
+                            </svg>
+                            <span class="ml-3">Experts</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="_flex _between no-hover">
+                        <div class="_flex"><svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32"
+                                aria-hidden="true" style="will-change: transform;" fill="currentColor">
+                                <path
+                                    d="M31 30H29V27a3 3 0 0 0-3-3H22a3 3 0 0 0-3 3v3H17V27a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5zM24 12a3 3 0 1 1-3 3 3 3 0 0 1 3-3m0-2a5 5 0 1 0 5 5A5 5 0 0 0 24 10zM15 22H13V19a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v3H1V19a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5zM8 4A3 3 0 1 1 5 7 3 3 0 0 1 8 4M8 2a5 5 0 1 0 5 5A5 5 0 0 0 8 2z">
+                                </path>
+                                <title>Group</title>
+                            </svg>
+                            <span class="ml-3">Utilisateurs</span>
+                        </div>
+                    </a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li>
+                    <a href="#" class="_flex _between no-hover">
+                        <div class="_flex">
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32"
+                                aria-hidden="true" style="will-change: transform;" fill="currentColor">
+                                <path
+                                    d="M27,16.76c0-.25,0-.5,0-.76s0-.51,0-.77l1.92-1.68A2,2,0,0,0,29.3,11L26.94,7a2,2,0,0,0-1.73-1,2,2,0,0,0-.64.1l-2.43.82a11.35,11.35,0,0,0-1.31-.75l-.51-2.52a2,2,0,0,0-2-1.61H13.64a2,2,0,0,0-2,1.61l-.51,2.52a11.48,11.48,0,0,0-1.32.75L7.43,6.06A2,2,0,0,0,6.79,6,2,2,0,0,0,5.06,7L2.7,11a2,2,0,0,0,.41,2.51L5,15.24c0,.25,0,.5,0,.76s0,.51,0,.77L3.11,18.45A2,2,0,0,0,2.7,21L5.06,25a2,2,0,0,0,1.73,1,2,2,0,0,0,.64-.1l2.43-.82a11.35,11.35,0,0,0,1.31.75l.51,2.52a2,2,0,0,0,2,1.61h4.72a2,2,0,0,0,2-1.61l.51-2.52a11.48,11.48,0,0,0,1.32-.75l2.42.82a2,2,0,0,0,.64.1,2,2,0,0,0,1.73-1L29.3,21a2,2,0,0,0-.41-2.51ZM25.21,24l-3.43-1.16a8.86,8.86,0,0,1-2.71,1.57L18.36,28H13.64l-.71-3.55a9.36,9.36,0,0,1-2.7-1.57L6.79,24,4.43,20l2.72-2.4a8.9,8.9,0,0,1,0-3.13L4.43,12,6.79,8l3.43,1.16a8.86,8.86,0,0,1,2.71-1.57L13.64,4h4.72l.71,3.55a9.36,9.36,0,0,1,2.7,1.57L25.21,8,27.57,12l-2.72,2.4a8.9,8.9,0,0,1,0,3.13L27.57,20Z">
+                                </path>
+                                <path
+                                    d="M16,22a6,6,0,1,1,6-6A5.94,5.94,0,0,1,16,22Zm0-10a3.91,3.91,0,0,0-4,4,3.91,3.91,0,0,0,4,4,3.91,3.91,0,0,0,4-4A3.91,3.91,0,0,0,16,12Z">
+                                </path>
+                                <title>Settings</title>
+                            </svg>
+                            <span class="ml-3">Paramètres</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="_flex _between no-hover">
+                        <div class="_flex">
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32"
+                                aria-hidden="true" style="will-change: transform;" fill="currentColor">
+                                <path
+                                    d="M6,30H18a2.0023,2.0023,0,0,0,2-2V25H18v3H6V4H18V7h2V4a2.0023,2.0023,0,0,0-2-2H6A2.0023,2.0023,0,0,0,4,4V28A2.0023,2.0023,0,0,0,6,30Z">
+                                </path>
+                                <path
+                                    d="M20.586 20.586L24.172 17 10 17 10 15 24.172 15 20.586 11.414 22 10 28 16 22 22 20.586 20.586z">
+                                </path>
+                                <title>Logout</title>
+                            </svg>
+                            <span class="ml-3">Se déconnecter</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Body -->
+        <div class="home-right py-8 px-10">
+            <div class="_flex _between">
+                <h4 class="bold m-0">Experts</h4>
+                <button class="btn btn-dark py-1 px-4 rounded-0 body-2 _flex _center">
+                    <i class="far fa-plus mr-2"></i>
+                    Ajouter
+                </button>
+            </div>
+            <!--  -->
+            <div class="_flex mt-8 mb-4">
+                <span class="border-right pr-3 mr-3">Tous (0)</span>
+                <span class="">Corbeille (0)</span>
+            </div>
+            <!-- div -->
+            <div class="form-inline">
+                <div class="form-group rounded bg-white pl-1 pr-3 py-0">
+                    <input type="text" class="form-control border-0 body-1" placeholder="Rechercher">
+                    <div><i class="fal fa-search"></i></div>
+                </div>
+                <div class="form-group ml-4">
+                    <select class="custom-select rounded body-1 border-0">
+                        <option value="Tous">Tous</option>
+                    </select>
+                </div>
+                <button class="btn bg-white body-2 ml-3 _flex _center"><i
+                        class="fas fa-filter mr-1"></i>Filtrer</button>
+            </div>
+
+            <!-- Contents -->
+            <table class="table table-bordered table-hover bg-white my-8">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 300px;">Nom</th>
+                        <th scope="col" style="width: 200px;">Email</th>
+                        <th scope="col">Pays</th>
+                        <th scope="col">Ville</th>
+                        <th scope="col">Cabinet</th>
+                        <th scope="col" style="width: 100px;text-align:center;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emery Mukendi Wafwana</th>
+                        <td>ewafwana@cabemery.org</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td class="text-center">
+                            <span class="c-pointer">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"
+                                    aria-hidden="true" style="will-change: transform;">
+                                    <path d="M12 12H14V24H12zM18 12H20V24H18z"></path>
+                                    <path
+                                        d="M4 6V8H6V28a2 2 0 0 0 2 2H24a2 2 0 0 0 2-2V8h2V6zM8 28V8H24V28zM12 2H20V4H12z">
+                                    </path>
+                                    <title>Delete</title>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
